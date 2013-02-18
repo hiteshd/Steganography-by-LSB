@@ -1,0 +1,27 @@
+----------------------------------------------------------
+Usage for Least Significant Bit Substitution Stenography
+----------------------------------------------------------
+
+Complie program using the syntax given below
+
+$ cc -o lsb lsb.c
+
+For a usage summary run the program complied above as 
+
+$ ./lsb
+
+You will be presented with a message as shown below
+
+*** Steganography by LSB substitution***
+Usage: ./lsb [-e][-d] [source file] [destination file] [text file]
+Mode
+-e : Add text to Image
+-d : Extract text from Image
+
+To create a stegano image from a plain image and a text file with the message. Run the program as below
+
+$ ./lsb -e sample.bmp stegano_sample.bmp message.txt
+
+To reterive the text that was put into an image with the above program. Run the program as shown below
+
+$ ./lsb -d stegano_sample.bmp intermediate.bmp original_message.txt
