@@ -73,11 +73,7 @@ int main(int argc,char** argv) {
 	/* 
 	After offset has been read and the file header has been written as is for the virgin image - the length of the hidden message is written as the first byte. This length is then used while decrypting the text from the image. 
 	*/
-		// fputc(hidden_message_length,hidden_message_handle);
-		// c++;
-
-		//memcpy(hidden_message_handle,file_handle,128);
-		
+	
 		do {
 			int bit_of_message;
 			if(!feof(message_handle)) {		
